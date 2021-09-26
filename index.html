@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="site-main-wrapper">
+       <button class="hamburger"><img src="img/menu (1).png" alt="" width="18rem"></button>
+    
+       <div class="mobilenav">
+           <button class="times"><img src="img/cancel.png" alt="" width="18rem"></button>
+           <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#arw">Problem</a></li>
+            <li><a href="#vr">Our initiative</a></li>
+            <li><a href="confirmation.html" >Explore</a></li>
+           </ul>
+       </div>
+       <header >
+        <nav id="rewq" class="top">
+            <div class="left">
+                <ul>
+                <li><img src="img/log.png" alt="" width="80rem"></li>
+                <li><a href="">Home</a></li>
+                <li><a href="#arw">Problem</a></li>
+                <li><a href="#vr">Our initiative</a></li>
+                <li><a href="confirmation.html" >Explore</a></li>
+            </ul>
+            </div>
+            <div class="Right">
+                <button class="btn"><a href="#vr">Scan</a></button>
+            </div>
+        </nav>
+    </header>
+    <section id="ytty" class="head">
+        <div class="res">
+            <div class="x">
+                <h2>Environment a word we all acknowledge <br>but refuse to protect?</h2>
+                <br>
+                <p>Major problem world face today is that educated adults and youth are completely unaware of environmental crisis and have no idea to deal with waste,here not only one can understand proper waste managment through guided blogs but can also claim benefits from environmental conservation act one do</p>
+                <br>
+                <button class="btn"><a href="confirmation.html">Explore</a></button>
+            </div>
+            <div class="x1 alignitems justifycontent ">
+                <img src="img/rex.png" alt="" width="600rem">
+            </div>
+        </div>
+        <br>
+    </section>
+<section id="arw" class="ado1" >
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="about">
+        <h2>
+            How to solve?
+        </h2>
+        <br>
+        <p>Proper waste managment is world best bet in environmental crisis and nations need to encourage there native population for sustainable development and this intiative's primary focus is to encourage people to become proactive environmentalist </p>
+        <img src="img/ad.png" alt="" width="200rem">
+</div>
+</section>
+<div id="vr" class="page3">
+    <br>
+    <br>
+    <h2>Scan here to claim benefits</h2>
+    <br>
+    <span id="scantitle"><p> </p></span>
+        <span class="pg3" id="brownbg">
+    
+            
+            <img src="img/image.png" alt="">
+     
+     
+     
+            
+     <style>
+       
+    
+     </style>       
+    <video id="preview"></video>
+    <footer>
+        <br>
+       <h4>&#169 All Rights Reserved 2021</h4> 
+    </footer>
+   </div>
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="isotope.pkgd.min.js"></script>
+<script src="script.js"></script>
+<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+
+
+<script type="text/javascript">
+    var scanner = new Instascan.Scanner({ video: document.getElementById('preview'), scanPeriod: 5, mirror: false });
+    scanner.addListener('scan',function(content){
+        if(content == 'access'){
+            // alert(content);
+            window.location.href='dex.html';
+        }else{
+            alert("Wrong QR Code !!!");
+        }
+    });
+    Instascan.Camera.getCameras().then(function (cameras){
+        if(cameras.length>0){
+            scanner.start(cameras[0]);
+            $('[name="options"]').on('change',function(){
+                if($(this).val()==1){
+                    if(cameras[0]!=""){
+                        scanner.start(cameras[0]);
+                    }else{
+                        alert('No Front camera found!');
+                    }
+                }else if($(this).val()==2){
+                    if(cameras[1]!=""){
+                        scanner.start(cameras[1]);
+                    }else{
+                        alert('No Back camera found!');
+                    }
+                }
+            });
+          }else{
+            console.error('No cameras found.');
+            alert('No cameras found.');
+          }
+        }).catch(function(e){
+        console.error(e);
+        alert(e);
+        });
+    </script>
+        <br>
+    </span>
+    <span class="pg3" id="scanner">
+       &nbsp;
+    </span>
+</div>

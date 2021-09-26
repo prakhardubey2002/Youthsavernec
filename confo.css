@@ -1,0 +1,117 @@
+@import url(utilities.css);
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    
+}
+:root{
+    --primary: black;
+    --secondary: #FF4c29;
+    --tertiary: #da0037;
+    --quaternary:#000c24;
+    --quinary: #E3A3B3;
+    --senary:#00ffff;
+    --cream:white;
+    --color: #3c3163;
+}
+.top{
+    background-color: var(--primary);
+    color: var(--tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    width: 100%;
+}
+.rexa{
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 200rem;
+    width: 100%;
+}
+.fr1{
+    flex:1;
+}
+.fr1 .side{
+    background-color: var(--primary);
+    color: var(--tertiary);
+    margin-top: 4rem;
+    margin-bottom: 0%;
+    width: 20rem;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fr1 .side ul{
+    list-style: none;
+}
+.fr1 .side ul li{
+    font-weight: 200;
+    line-height: 4rem;
+}
+.fr1 .side ul li.active{
+    color: chartreuse;
+    transform: scale(1.06);
+}
+
+.rexa .fr2{
+    flex:2;
+    color: var(--cream);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+.wrapper{
+    border-radius: 2em;
+    margin: 0rem 10rem;
+}
+.outer {
+	position: relative;
+	background: #fff;
+	height: auto;
+	width: 18rem;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+    border-radius: 2em;
+    text-align: center;
+    background: linear-gradient(10deg,cyan,rgb(255, 255, 255));
+    border: 2px solid var(--tertiary);
+    margin-bottom: 2rem;
+   
+}
+.outer:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.outer h1 {
+	color: var(--primary);
+    border-bottom: 1px solid black;
+}
+
+.outer p {
+	width: auto;
+	font-size:  1rem;
+	line-height: 1;
+	color: rgb(0, 0, 0);
+	margin: 0.5rem 0;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cream);
+    background: var(--primary);
+}
