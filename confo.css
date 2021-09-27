@@ -23,6 +23,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    word-wrap: normal;
     font-size: 2rem;
     width: 100%;
 }
@@ -33,7 +34,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    height: 200rem;
+    height: 320rem;
     width: 100%;
 }
 .fr1{
@@ -44,7 +45,7 @@
     color: var(--tertiary);
     margin-top: 4rem;
     margin-bottom: 0%;
-    width: 20rem;
+    width: 18rem;
     height: fit-content;
     display: flex;
     align-items: flex-start;
@@ -110,8 +111,27 @@
 }
 footer{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     color: var(--cream);
     background: var(--primary);
+}
+@media only screen and (max-width:1024px){
+    .wrapper{
+        /* margin-top: 0; */
+        margin-left: 6rem;
+        margin-right: 15rem;
+        /* text-align: center; */
+        /* overflow: hidden; */
+    }
+    .rexa .fr2{
+        width: 80vw;
+        bottom: 46%;
+        z-index: 4;
+    }
+    .rexa {
+        height: 670em;
+    }
+
 }
