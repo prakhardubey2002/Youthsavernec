@@ -127,6 +127,66 @@ footer{
     width: 100%;
     overflow: hidden;
 }
+.mainw{
+    background-color: black;
+    /* position:relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mainw .imga img{
+    width: 15em;
+}
+.mainw .flexo{
+    margin: 1rem;
+    /* padding-left: 0.1rem;
+    padding-right: 0.1rem; */
+    color: white;
+}
+.mainw .flexo{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.mainw .flexo .er ul li{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 100;
+    text-decoration: none;
+    list-style: none;
+}
+.mainw h1{
+    color: #da0037;
+}
+.mainw .flexo .er{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mainw .flexo .wer ul li{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 100;
+    text-decoration: none;
+    list-style: none;
+}
+
+.mainw .flexo .wer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @media (max-width:1024px){
     header #rewq{
         display: none;
@@ -137,6 +197,14 @@ footer{
     }
     .res{
         margin-left: 1rem;
+    }
+    .mainw .flexo .er{
+        margin-right: 1rem;
+       
+    }
+    .mainw .flexo .wer {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
