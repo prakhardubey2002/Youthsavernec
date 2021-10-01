@@ -14,6 +14,15 @@
     --senary:#00ffff;
     --cream:white;
 }
+#loader{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(0, 0, 0)
+    url(https://i.gifer.com/SVKl.gif)
+    no-repeat center;
+    z-index: 99999;
+}
 nav{
     background: var(--primary);
     display:flex;
